@@ -1,0 +1,49 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="D:\Projects\UnityPhysXPlugin\NVIDIA.PhysX.Native\Wrapper\NativeCSHARP_wrap.cxx">
+      <Filter>Wrapper</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Projects\UnityPhysXPlugin\NVIDIA.PhysX.Native\Helpers\Helpers.cpp">
+      <Filter>Helpers</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="D:\Projects\UnityPhysXPlugin\NVIDIA.PhysX.Native\Header\header.h">
+      <Filter>Header</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Projects\UnityPhysXPlugin\NVIDIA.PhysX.Native\Helpers\Helpers.h">
+      <Filter>Helpers</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Projects\UnityPhysXPlugin\NVIDIA.PhysX.Native\Interface\BasicTypemaps.h">
+      <Filter>Interface</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Projects\UnityPhysXPlugin\NVIDIA.PhysX.Native\Wrapper\NativeCSHARP_wrap.h">
+      <Filter>Wrapper</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="D:\Projects\UnityPhysXPlugin\NVIDIA.PhysX.Native\Interface\Native.i">
+      <Filter>Interface</Filter>
+    </CustomBuild>
+    <CustomBuild Include="D:\Projects\UnityPhysXPlugin\NVIDIA.PhysX.Native\CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="D:\Projects\UnityPhysXPlugin\NVIDIA.PhysX\Wrapper\Native.cs" />
+    <None Include="D:\Projects\UnityPhysXPlugin\NVIDIA.PhysX\Wrapper\NativePINVOKE.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Header">
+      <UniqueIdentifier>{FEE87DA1-AE36-3E66-A2BA-DD3F5A9B9171}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Helpers">
+      <UniqueIdentifier>{4954CE45-614D-3DC9-9A1A-5938F1EED37E}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Interface">
+      <UniqueIdentifier>{75DB1479-4609-345B-A724-FF96EFF198A0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Wrapper">
+      <UniqueIdentifier>{7D4D2345-F5BE-3180-AF18-BB7F059DF4C8}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

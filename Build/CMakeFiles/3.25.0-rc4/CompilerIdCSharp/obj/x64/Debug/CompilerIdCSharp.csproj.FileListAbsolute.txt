@@ -1,0 +1,6 @@
+D:\Projects\UnityPhysXPlugin\Build\CMakeFiles\3.25.0-rc4\CompilerIdCSharp\obj\x64\Debug\CompilerIdCSharp.csprojAssemblyReference.cache
+D:\Projects\UnityPhysXPlugin\Build\CMakeFiles\3.25.0-rc4\CompilerIdCSharp\obj\x64\Debug\CompilerIdCSharp.csproj.CoreCompileInputs.cache
+D:\Projects\UnityPhysXPlugin\Build\CMakeFiles\3.25.0-rc4\CompilerIdCSharp\obj\x64\Debug\CompilerIdCSharp.exe
+D:\Projects\UnityPhysXPlugin\Build\CMakeFiles\3.25.0-rc4\CompilerIdCSharp\obj\x64\Debug\CompilerIdCSharp.pdb
+D:\Projects\UnityPhysXPlugin\Build\CMakeFiles\3.25.0-rc4\CompilerIdCSharp\CompilerIdCSharp.exe
+D:\Projects\UnityPhysXPlugin\Build\CMakeFiles\3.25.0-rc4\CompilerIdCSharp\CompilerIdCSharp.pdb

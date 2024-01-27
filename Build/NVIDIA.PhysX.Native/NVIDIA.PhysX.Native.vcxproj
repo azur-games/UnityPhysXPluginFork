@@ -1,0 +1,453 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Profile|x64">
+      <Configuration>Profile</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Checked|x64">
+      <Configuration>Checked</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{1C94E222-7411-317F-81D9-C9582BF15F0F}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <WindowsTargetPlatformVersion>10.0.19041.0</WindowsTargetPlatformVersion>
+    <Platform>x64</Platform>
+    <ProjectName>NVIDIA.PhysX.Native</ProjectName>
+    <VCProjectUpgraderObjectName>NoUpgrade</VCProjectUpgraderObjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v141</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v141</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Profile|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v141</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Checked|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v141</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:\Projects\UnityPhysXPlugin\Build\NVIDIA.PhysX.Native\Debug\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">NVIDIA.PhysX.Native.dir\Debug\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">NVIDIA.PhysX.Native</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">.dll</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</GenerateManifest>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:\Projects\UnityPhysXPlugin\Build\NVIDIA.PhysX.Native\Release\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">NVIDIA.PhysX.Native.dir\Release\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Release|x64'">NVIDIA.PhysX.Native</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Release|x64'">.dll</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</GenerateManifest>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Profile|x64'">D:\Projects\UnityPhysXPlugin\Build\NVIDIA.PhysX.Native\Profile\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Profile|x64'">NVIDIA.PhysX.Native.dir\Profile\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Profile|x64'">NVIDIA.PhysX.Native</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Profile|x64'">.dll</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Profile|x64'">true</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='Profile|x64'">true</GenerateManifest>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Checked|x64'">D:\Projects\UnityPhysXPlugin\Build\NVIDIA.PhysX.Native\Checked\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Checked|x64'">NVIDIA.PhysX.Native.dir\Checked\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Checked|x64'">NVIDIA.PhysX.Native</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Checked|x64'">.dll</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Checked|x64'">true</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='Checked|x64'">true</GenerateManifest>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>D:\Projects\UnityPhysXPlugin\NVIDIA.PhysX.Native;D:\Projects\UnityPhysXPlugin\NVIDIA.PhysX.Native\Header;D:\Temp\PhysX-4.1\physx\include;D:\Temp\PhysX-4.1\pxshared\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>Disabled</InlineFunctionExpansion>
+      <Optimization>Disabled</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;PX_PHYSX_STATIC_LIB;CMAKE_INTDIR="Debug";NVIDIA_PhysX_Native_EXPORTS</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_DEBUG;_WINDOWS;PX_PHYSX_STATIC_LIB;CMAKE_INTDIR=\"Debug\";NVIDIA_PhysX_Native_EXPORTS</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>D:\Projects\UnityPhysXPlugin\NVIDIA.PhysX.Native;D:\Projects\UnityPhysXPlugin\NVIDIA.PhysX.Native\Header;D:\Temp\PhysX-4.1\physx\include;D:\Temp\PhysX-4.1\pxshared\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>D:\Projects\UnityPhysXPlugin\NVIDIA.PhysX.Native;D:\Projects\UnityPhysXPlugin\NVIDIA.PhysX.Native\Header;D:\Temp\PhysX-4.1\physx\include;D:\Temp\PhysX-4.1\pxshared\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <PostBuildEvent>
+      <Message></Message>
+      <Command>setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy D:/Projects/UnityPhysXPlugin/Build/NVIDIA.PhysX.Native/Debug/NVIDIA.PhysX.Native.dll ../../Bin/NVIDIA.PhysX.Native.dll
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E copy D:/Projects/UnityPhysXPlugin/Build/NVIDIA.PhysX.Native/Debug/NVIDIA.PhysX.Native.dll "../../Unity/PhysX Plugin/Assets/NVIDIA/PhysX/Runtime/Plugins/x86_64/NVIDIA.PhysX.Native.dll"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+    </PostBuildEvent>
+    <Link>
+      <AdditionalDependencies>PhysXFoundation_static_64.lib;PhysX_static_64.lib;PhysXCommon_static_64.lib;PhysXCooking_static_64.lib;PhysXExtensions_static_64.lib;PhysXPvdSDK_static_64.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>D:/Temp/PhysX-4.1/physx/bin/win.x86_64.vc141.mt/$(Configuration);D:/Temp/PhysX-4.1/physx/bin/win.x86_64.vc141.mt/$(Configuration)/$(Configuration);%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>D:/Projects/UnityPhysXPlugin/Build/NVIDIA.PhysX.Native/Debug/NVIDIA.PhysX.Native.lib</ImportLibrary>
+      <ProgramDataBaseFile>D:/Projects/UnityPhysXPlugin/Build/NVIDIA.PhysX.Native/Debug/NVIDIA.PhysX.Native.pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>D:\Projects\UnityPhysXPlugin\NVIDIA.PhysX.Native;D:\Projects\UnityPhysXPlugin\NVIDIA.PhysX.Native\Header;D:\Temp\PhysX-4.1\physx\include;D:\Temp\PhysX-4.1\pxshared\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;PX_PHYSX_STATIC_LIB;CMAKE_INTDIR="Release";NVIDIA_PhysX_Native_EXPORTS</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;PX_PHYSX_STATIC_LIB;CMAKE_INTDIR=\"Release\";NVIDIA_PhysX_Native_EXPORTS</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>D:\Projects\UnityPhysXPlugin\NVIDIA.PhysX.Native;D:\Projects\UnityPhysXPlugin\NVIDIA.PhysX.Native\Header;D:\Temp\PhysX-4.1\physx\include;D:\Temp\PhysX-4.1\pxshared\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>D:\Projects\UnityPhysXPlugin\NVIDIA.PhysX.Native;D:\Projects\UnityPhysXPlugin\NVIDIA.PhysX.Native\Header;D:\Temp\PhysX-4.1\physx\include;D:\Temp\PhysX-4.1\pxshared\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <PostBuildEvent>
+      <Message></Message>
+      <Command>setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy D:/Projects/UnityPhysXPlugin/Build/NVIDIA.PhysX.Native/Release/NVIDIA.PhysX.Native.dll ../../Bin/NVIDIA.PhysX.Native.dll
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E copy D:/Projects/UnityPhysXPlugin/Build/NVIDIA.PhysX.Native/Release/NVIDIA.PhysX.Native.dll "../../Unity/PhysX Plugin/Assets/NVIDIA/PhysX/Runtime/Plugins/x86_64/NVIDIA.PhysX.Native.dll"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+    </PostBuildEvent>
+    <Link>
+      <AdditionalDependencies>PhysXFoundation_static_64.lib;PhysX_static_64.lib;PhysXCommon_static_64.lib;PhysXCooking_static_64.lib;PhysXExtensions_static_64.lib;PhysXPvdSDK_static_64.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>D:/Temp/PhysX-4.1/physx/bin/win.x86_64.vc141.mt/$(Configuration);D:/Temp/PhysX-4.1/physx/bin/win.x86_64.vc141.mt/$(Configuration)/$(Configuration);%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>D:/Projects/UnityPhysXPlugin/Build/NVIDIA.PhysX.Native/Release/NVIDIA.PhysX.Native.lib</ImportLibrary>
+      <ProgramDataBaseFile>D:/Projects/UnityPhysXPlugin/Build/NVIDIA.PhysX.Native/Release/NVIDIA.PhysX.Native.pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Profile|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>D:\Projects\UnityPhysXPlugin\NVIDIA.PhysX.Native;D:\Projects\UnityPhysXPlugin\NVIDIA.PhysX.Native\Header;D:\Temp\PhysX-4.1\physx\include;D:\Temp\PhysX-4.1\pxshared\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;PX_PHYSX_STATIC_LIB;CMAKE_INTDIR="Profile";NVIDIA_PhysX_Native_EXPORTS</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;PX_PHYSX_STATIC_LIB;CMAKE_INTDIR=\"Profile\";NVIDIA_PhysX_Native_EXPORTS</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>D:\Projects\UnityPhysXPlugin\NVIDIA.PhysX.Native;D:\Projects\UnityPhysXPlugin\NVIDIA.PhysX.Native\Header;D:\Temp\PhysX-4.1\physx\include;D:\Temp\PhysX-4.1\pxshared\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>D:\Projects\UnityPhysXPlugin\NVIDIA.PhysX.Native;D:\Projects\UnityPhysXPlugin\NVIDIA.PhysX.Native\Header;D:\Temp\PhysX-4.1\physx\include;D:\Temp\PhysX-4.1\pxshared\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <PostBuildEvent>
+      <Message></Message>
+      <Command>setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy D:/Projects/UnityPhysXPlugin/Build/NVIDIA.PhysX.Native/Profile/NVIDIA.PhysX.Native.dll ../../Bin/NVIDIA.PhysX.Native.dll
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E copy D:/Projects/UnityPhysXPlugin/Build/NVIDIA.PhysX.Native/Profile/NVIDIA.PhysX.Native.dll "../../Unity/PhysX Plugin/Assets/NVIDIA/PhysX/Runtime/Plugins/x86_64/NVIDIA.PhysX.Native.dll"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+    </PostBuildEvent>
+    <Link>
+      <AdditionalDependencies>PhysXFoundation_static_64.lib;PhysX_static_64.lib;PhysXCommon_static_64.lib;PhysXCooking_static_64.lib;PhysXExtensions_static_64.lib;PhysXPvdSDK_static_64.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>D:/Temp/PhysX-4.1/physx/bin/win.x86_64.vc141.mt/$(Configuration);D:/Temp/PhysX-4.1/physx/bin/win.x86_64.vc141.mt/$(Configuration)/$(Configuration);%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>D:/Projects/UnityPhysXPlugin/Build/NVIDIA.PhysX.Native/Profile/NVIDIA.PhysX.Native.lib</ImportLibrary>
+      <ProgramDataBaseFile>D:/Projects/UnityPhysXPlugin/Build/NVIDIA.PhysX.Native/Profile/NVIDIA.PhysX.Native.pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Checked|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>D:\Projects\UnityPhysXPlugin\NVIDIA.PhysX.Native;D:\Projects\UnityPhysXPlugin\NVIDIA.PhysX.Native\Header;D:\Temp\PhysX-4.1\physx\include;D:\Temp\PhysX-4.1\pxshared\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;PX_PHYSX_STATIC_LIB;CMAKE_INTDIR="Checked";NVIDIA_PhysX_Native_EXPORTS</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;PX_PHYSX_STATIC_LIB;CMAKE_INTDIR=\"Checked\";NVIDIA_PhysX_Native_EXPORTS</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>D:\Projects\UnityPhysXPlugin\NVIDIA.PhysX.Native;D:\Projects\UnityPhysXPlugin\NVIDIA.PhysX.Native\Header;D:\Temp\PhysX-4.1\physx\include;D:\Temp\PhysX-4.1\pxshared\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>D:\Projects\UnityPhysXPlugin\NVIDIA.PhysX.Native;D:\Projects\UnityPhysXPlugin\NVIDIA.PhysX.Native\Header;D:\Temp\PhysX-4.1\physx\include;D:\Temp\PhysX-4.1\pxshared\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <PostBuildEvent>
+      <Message></Message>
+      <Command>setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy D:/Projects/UnityPhysXPlugin/Build/NVIDIA.PhysX.Native/Checked/NVIDIA.PhysX.Native.dll ../../Bin/NVIDIA.PhysX.Native.dll
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E copy D:/Projects/UnityPhysXPlugin/Build/NVIDIA.PhysX.Native/Checked/NVIDIA.PhysX.Native.dll "../../Unity/PhysX Plugin/Assets/NVIDIA/PhysX/Runtime/Plugins/x86_64/NVIDIA.PhysX.Native.dll"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+    </PostBuildEvent>
+    <Link>
+      <AdditionalDependencies>PhysXFoundation_static_64.lib;PhysX_static_64.lib;PhysXCommon_static_64.lib;PhysXCooking_static_64.lib;PhysXExtensions_static_64.lib;PhysXPvdSDK_static_64.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>D:/Temp/PhysX-4.1/physx/bin/win.x86_64.vc141.mt/$(Configuration);D:/Temp/PhysX-4.1/physx/bin/win.x86_64.vc141.mt/$(Configuration)/$(Configuration);%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>D:/Projects/UnityPhysXPlugin/Build/NVIDIA.PhysX.Native/Checked/NVIDIA.PhysX.Native.lib</ImportLibrary>
+      <ProgramDataBaseFile>D:/Projects/UnityPhysXPlugin/Build/NVIDIA.PhysX.Native/Checked/NVIDIA.PhysX.Native.pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <CustomBuild Include="D:\Projects\UnityPhysXPlugin\NVIDIA.PhysX.Native\Interface\Native.i">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Swig compile Interface/Native.i for csharp</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E make_directory D:/Projects/UnityPhysXPlugin/Build/NVIDIA.PhysX.Native/CMakeFiles/NVIDIA.PhysX.Native.dir D:/Projects/UnityPhysXPlugin/NVIDIA.PhysX.Native/../NVIDIA.PhysX/Wrapper D:/Projects/UnityPhysXPlugin/NVIDIA.PhysX.Native/Wrapper
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E env SWIG_LIB=D:/swigwin-4.0.2/Lib D:/swigwin-4.0.2/swig.exe -csharp -namespace NVIDIA.PhysX -nodefaultctor -outdir D:/Projects/UnityPhysXPlugin/NVIDIA.PhysX.Native/../NVIDIA.PhysX/Wrapper -c++ -dllimport NVIDIA.PhysX.Native -ID:/Projects/UnityPhysXPlugin/NVIDIA.PhysX.Native -ID:/Projects/UnityPhysXPlugin/NVIDIA.PhysX.Native/Header -ID:/Temp/PhysX-4.1/physx/include -ID:/Temp/PhysX-4.1/pxshared/include -o D:/Projects/UnityPhysXPlugin/NVIDIA.PhysX.Native/Wrapper/NativeCSHARP_wrap.cxx D:/Projects/UnityPhysXPlugin/NVIDIA.PhysX.Native/Interface/Native.i
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:\Projects\UnityPhysXPlugin\NVIDIA.PhysX.Native\Wrapper\NativeCSHARP_wrap.cxx;D:\Projects\UnityPhysXPlugin\NVIDIA.PhysX\Wrapper\Native.cs;D:\Projects\UnityPhysXPlugin\NVIDIA.PhysX\Wrapper\NativePINVOKE.cs</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Swig compile Interface/Native.i for csharp</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E make_directory D:/Projects/UnityPhysXPlugin/Build/NVIDIA.PhysX.Native/CMakeFiles/NVIDIA.PhysX.Native.dir D:/Projects/UnityPhysXPlugin/NVIDIA.PhysX.Native/../NVIDIA.PhysX/Wrapper D:/Projects/UnityPhysXPlugin/NVIDIA.PhysX.Native/Wrapper
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E env SWIG_LIB=D:/swigwin-4.0.2/Lib D:/swigwin-4.0.2/swig.exe -csharp -namespace NVIDIA.PhysX -nodefaultctor -outdir D:/Projects/UnityPhysXPlugin/NVIDIA.PhysX.Native/../NVIDIA.PhysX/Wrapper -c++ -dllimport NVIDIA.PhysX.Native -ID:/Projects/UnityPhysXPlugin/NVIDIA.PhysX.Native -ID:/Projects/UnityPhysXPlugin/NVIDIA.PhysX.Native/Header -ID:/Temp/PhysX-4.1/physx/include -ID:/Temp/PhysX-4.1/pxshared/include -o D:/Projects/UnityPhysXPlugin/NVIDIA.PhysX.Native/Wrapper/NativeCSHARP_wrap.cxx D:/Projects/UnityPhysXPlugin/NVIDIA.PhysX.Native/Interface/Native.i
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:\Projects\UnityPhysXPlugin\NVIDIA.PhysX.Native\Wrapper\NativeCSHARP_wrap.cxx;D:\Projects\UnityPhysXPlugin\NVIDIA.PhysX\Wrapper\Native.cs;D:\Projects\UnityPhysXPlugin\NVIDIA.PhysX\Wrapper\NativePINVOKE.cs</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Profile|x64'">Swig compile Interface/Native.i for csharp</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Profile|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E make_directory D:/Projects/UnityPhysXPlugin/Build/NVIDIA.PhysX.Native/CMakeFiles/NVIDIA.PhysX.Native.dir D:/Projects/UnityPhysXPlugin/NVIDIA.PhysX.Native/../NVIDIA.PhysX/Wrapper D:/Projects/UnityPhysXPlugin/NVIDIA.PhysX.Native/Wrapper
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Profile|x64'">%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Profile|x64'">D:\Projects\UnityPhysXPlugin\NVIDIA.PhysX.Native\Wrapper\NativeCSHARP_wrap.cxx;D:\Projects\UnityPhysXPlugin\NVIDIA.PhysX\Wrapper\Native.cs;D:\Projects\UnityPhysXPlugin\NVIDIA.PhysX\Wrapper\NativePINVOKE.cs</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Profile|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Checked|x64'">Swig compile Interface/Native.i for csharp</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Checked|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E make_directory D:/Projects/UnityPhysXPlugin/Build/NVIDIA.PhysX.Native/CMakeFiles/NVIDIA.PhysX.Native.dir D:/Projects/UnityPhysXPlugin/NVIDIA.PhysX.Native/../NVIDIA.PhysX/Wrapper D:/Projects/UnityPhysXPlugin/NVIDIA.PhysX.Native/Wrapper
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E env SWIG_LIB=D:/swigwin-4.0.2/Lib D:/swigwin-4.0.2/swig.exe -csharp -namespace NVIDIA.PhysX -nodefaultctor -outdir D:/Projects/UnityPhysXPlugin/NVIDIA.PhysX.Native/../NVIDIA.PhysX/Wrapper -c++ -dllimport NVIDIA.PhysX.Native -ID:/Projects/UnityPhysXPlugin/NVIDIA.PhysX.Native -ID:/Projects/UnityPhysXPlugin/NVIDIA.PhysX.Native/Header -ID:/Temp/PhysX-4.1/physx/include -ID:/Temp/PhysX-4.1/pxshared/include -o D:/Projects/UnityPhysXPlugin/NVIDIA.PhysX.Native/Wrapper/NativeCSHARP_wrap.cxx D:/Projects/UnityPhysXPlugin/NVIDIA.PhysX.Native/Interface/Native.i
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Checked|x64'">%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Checked|x64'">D:\Projects\UnityPhysXPlugin\NVIDIA.PhysX.Native\Wrapper\NativeCSHARP_wrap.cxx;D:\Projects\UnityPhysXPlugin\NVIDIA.PhysX\Wrapper\Native.cs;D:\Projects\UnityPhysXPlugin\NVIDIA.PhysX\Wrapper\NativePINVOKE.cs</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Checked|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="D:\Projects\UnityPhysXPlugin\NVIDIA.PhysX.Native\CMakeLists.txt">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Building Custom Rule D:/Projects/UnityPhysXPlugin/NVIDIA.PhysX.Native/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SD:/Projects/UnityPhysXPlugin -BD:/Projects/UnityPhysXPlugin/Build --check-stamp-file D:/Projects/UnityPhysXPlugin/Build/NVIDIA.PhysX.Native/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\Program Files\CMake\share\cmake-3.25\Modules\FindPackageHandleStandardArgs.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\FindPackageMessage.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\FindSWIG.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\UseSWIG.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:\Projects\UnityPhysXPlugin\Build\NVIDIA.PhysX.Native\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Building Custom Rule D:/Projects/UnityPhysXPlugin/NVIDIA.PhysX.Native/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SD:/Projects/UnityPhysXPlugin -BD:/Projects/UnityPhysXPlugin/Build --check-stamp-file D:/Projects/UnityPhysXPlugin/Build/NVIDIA.PhysX.Native/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Program Files\CMake\share\cmake-3.25\Modules\FindPackageHandleStandardArgs.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\FindPackageMessage.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\FindSWIG.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\UseSWIG.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:\Projects\UnityPhysXPlugin\Build\NVIDIA.PhysX.Native\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Profile|x64'">Building Custom Rule D:/Projects/UnityPhysXPlugin/NVIDIA.PhysX.Native/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Profile|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SD:/Projects/UnityPhysXPlugin -BD:/Projects/UnityPhysXPlugin/Build --check-stamp-file D:/Projects/UnityPhysXPlugin/Build/NVIDIA.PhysX.Native/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Profile|x64'">C:\Program Files\CMake\share\cmake-3.25\Modules\FindPackageHandleStandardArgs.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\FindPackageMessage.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\FindSWIG.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\UseSWIG.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Profile|x64'">D:\Projects\UnityPhysXPlugin\Build\NVIDIA.PhysX.Native\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Profile|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Checked|x64'">Building Custom Rule D:/Projects/UnityPhysXPlugin/NVIDIA.PhysX.Native/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Checked|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SD:/Projects/UnityPhysXPlugin -BD:/Projects/UnityPhysXPlugin/Build --check-stamp-file D:/Projects/UnityPhysXPlugin/Build/NVIDIA.PhysX.Native/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Checked|x64'">C:\Program Files\CMake\share\cmake-3.25\Modules\FindPackageHandleStandardArgs.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\FindPackageMessage.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\FindSWIG.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\UseSWIG.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Checked|x64'">D:\Projects\UnityPhysXPlugin\Build\NVIDIA.PhysX.Native\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Checked|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="D:\Projects\UnityPhysXPlugin\NVIDIA.PhysX.Native\Wrapper\NativeCSHARP_wrap.cxx" />
+    <None Include="D:\Projects\UnityPhysXPlugin\NVIDIA.PhysX\Wrapper\Native.cs">
+    </None>
+    <None Include="D:\Projects\UnityPhysXPlugin\NVIDIA.PhysX\Wrapper\NativePINVOKE.cs">
+    </None>
+    <ClInclude Include="D:\Projects\UnityPhysXPlugin\NVIDIA.PhysX.Native\Header\header.h" />
+    <ClCompile Include="D:\Projects\UnityPhysXPlugin\NVIDIA.PhysX.Native\Helpers\Helpers.cpp" />
+    <ClInclude Include="D:\Projects\UnityPhysXPlugin\NVIDIA.PhysX.Native\Helpers\Helpers.h" />
+    <ClInclude Include="D:\Projects\UnityPhysXPlugin\NVIDIA.PhysX.Native\Interface\BasicTypemaps.h" />
+    <ClInclude Include="D:\Projects\UnityPhysXPlugin\NVIDIA.PhysX.Native\Wrapper\NativeCSHARP_wrap.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="D:\Projects\UnityPhysXPlugin\Build\ZERO_CHECK.vcxproj">
+      <Project>{31A902C6-4837-3DF2-8A94-99918B40922C}</Project>
+      <Name>ZERO_CHECK</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

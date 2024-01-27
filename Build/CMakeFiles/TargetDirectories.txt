@@ -1,0 +1,5 @@
+D:/Projects/UnityPhysXPlugin/Build/CMakeFiles/ALL_BUILD.dir
+D:/Projects/UnityPhysXPlugin/Build/CMakeFiles/ZERO_CHECK.dir
+D:/Projects/UnityPhysXPlugin/Build/NVIDIA.PhysX.Native/CMakeFiles/NVIDIA.PhysX.Native.dir
+D:/Projects/UnityPhysXPlugin/Build/NVIDIA.PhysX.Native/CMakeFiles/ALL_BUILD.dir
+D:/Projects/UnityPhysXPlugin/Build/NVIDIA.PhysX/CMakeFiles/NVIDIA.PhysX.dir

@@ -1,0 +1,853 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{D184AEF0-A2AF-3009-A831-62F8B5625844}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <WindowsTargetPlatformVersion>10.0.19041.0</WindowsTargetPlatformVersion>
+    <Platform>x64</Platform>
+    <ProjectName>NVIDIA.PhysX</ProjectName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <VCProjectUpgraderObjectName>NoUpgrade</VCProjectUpgraderObjectName>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+  </PropertyGroup>
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <DebugSymbols>true</DebugSymbols>
+    <DefineDebug>true</DefineDebug>
+    <OutputPath>D:\Projects\UnityPhysXPlugin\Build\NVIDIA.PhysX\Debug\</OutputPath>
+    <PlatformTarget>anycpu</PlatformTarget>
+    <PlatformToolset>v141</PlatformToolset>
+    <AssemblyName>NVIDIA.PhysX</AssemblyName>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+    <DebugType>full</DebugType>
+    <DefineConstants>DEBUG</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <Optimize>false</Optimize>
+    <WarningLevel>3</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <OutputPath>D:\Projects\UnityPhysXPlugin\Build\NVIDIA.PhysX\Release\</OutputPath>
+    <PlatformTarget>anycpu</PlatformTarget>
+    <PlatformToolset>v141</PlatformToolset>
+    <AssemblyName>NVIDIA.PhysX</AssemblyName>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+    <DebugType>none</DebugType>
+    <DefineConstants></DefineConstants>
+    <ErrorReport>queue</ErrorReport>
+    <Optimize>true</Optimize>
+    <WarningLevel>1</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Profile|x64'" Label="Configuration">
+    <OutputPath>D:\Projects\UnityPhysXPlugin\Build\NVIDIA.PhysX\Profile\</OutputPath>
+    <PlatformTarget>anycpu</PlatformTarget>
+    <PlatformToolset>v141</PlatformToolset>
+    <AssemblyName>NVIDIA.PhysX</AssemblyName>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+    <DefineConstants></DefineConstants>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Checked|x64'" Label="Configuration">
+    <OutputPath>D:\Projects\UnityPhysXPlugin\Build\NVIDIA.PhysX\Checked\</OutputPath>
+    <PlatformTarget>anycpu</PlatformTarget>
+    <PlatformToolset>v141</PlatformToolset>
+    <AssemblyName>NVIDIA.PhysX</AssemblyName>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+    <DefineConstants></DefineConstants>
+  </PropertyGroup>
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.CSharp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.CSharp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <ItemGroup>
+    <None Include="D:\Projects\UnityPhysXPlugin\NVIDIA.PhysX\CMakeLists.txt">
+      <Link>CMakeLists.txt</Link>
+    </None>
+  </ItemGroup>
+  <Target Condition="'$(Configuration)|$(Platform)'=='Debug|x64'"
+    Name="CustomCommand_Debug_653b51b35c7dc34c85ad4c3db635fa67"
+    Inputs="D:/Projects/UnityPhysXPlugin/NVIDIA.PhysX/CMakeLists.txt;C:\Program Files\CMake\share\cmake-3.25\Modules\CMakeCSharpInformation.cmake;D:\Projects\UnityPhysXPlugin\Build\CMakeFiles\3.25.0-rc4\CMakeCSharpCompiler.cmake"
+    Outputs="D:\Projects\UnityPhysXPlugin\Build\NVIDIA.PhysX\CMakeFiles\generate.stamp">
+    <Exec Command="echo Building Custom Rule D:/Projects/UnityPhysXPlugin/NVIDIA.PhysX/CMakeLists.txt" />
+    <Exec Command="setlocal&#10;&quot;C:\Program Files\CMake\bin\cmake.exe&quot; -SD:/Projects/UnityPhysXPlugin -BD:/Projects/UnityPhysXPlugin/Build --check-stamp-file D:/Projects/UnityPhysXPlugin/Build/NVIDIA.PhysX/CMakeFiles/generate.stamp&#10;if %errorlevel% neq 0 goto :cmEnd&#10;:cmEnd&#10;endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone&#10;:cmErrorLevel&#10;exit /b %1&#10;:cmDone&#10;if %errorlevel% neq 0 goto :VCEnd&#10;:VCEnd" />
+  </Target>
+  <Target Condition="'$(Configuration)|$(Platform)'=='Release|x64'"
+    Name="CustomCommand_Release_653b51b35c7dc34c85ad4c3db635fa67"
+    Inputs="D:/Projects/UnityPhysXPlugin/NVIDIA.PhysX/CMakeLists.txt;C:\Program Files\CMake\share\cmake-3.25\Modules\CMakeCSharpInformation.cmake;D:\Projects\UnityPhysXPlugin\Build\CMakeFiles\3.25.0-rc4\CMakeCSharpCompiler.cmake"
+    Outputs="D:\Projects\UnityPhysXPlugin\Build\NVIDIA.PhysX\CMakeFiles\generate.stamp">
+    <Exec Command="echo Building Custom Rule D:/Projects/UnityPhysXPlugin/NVIDIA.PhysX/CMakeLists.txt" />
+    <Exec Command="setlocal&#10;&quot;C:\Program Files\CMake\bin\cmake.exe&quot; -SD:/Projects/UnityPhysXPlugin -BD:/Projects/UnityPhysXPlugin/Build --check-stamp-file D:/Projects/UnityPhysXPlugin/Build/NVIDIA.PhysX/CMakeFiles/generate.stamp&#10;if %errorlevel% neq 0 goto :cmEnd&#10;:cmEnd&#10;endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone&#10;:cmErrorLevel&#10;exit /b %1&#10;:cmDone&#10;if %errorlevel% neq 0 goto :VCEnd&#10;:VCEnd" />
+  </Target>
+  <Target Condition="'$(Configuration)|$(Platform)'=='Profile|x64'"
+    Name="CustomCommand_Profile_653b51b35c7dc34c85ad4c3db635fa67"
+    Inputs="D:/Projects/UnityPhysXPlugin/NVIDIA.PhysX/CMakeLists.txt;C:\Program Files\CMake\share\cmake-3.25\Modules\CMakeCSharpInformation.cmake;D:\Projects\UnityPhysXPlugin\Build\CMakeFiles\3.25.0-rc4\CMakeCSharpCompiler.cmake"
+    Outputs="D:\Projects\UnityPhysXPlugin\Build\NVIDIA.PhysX\CMakeFiles\generate.stamp">
+    <Exec Command="echo Building Custom Rule D:/Projects/UnityPhysXPlugin/NVIDIA.PhysX/CMakeLists.txt" />
+    <Exec Command="setlocal&#10;&quot;C:\Program Files\CMake\bin\cmake.exe&quot; -SD:/Projects/UnityPhysXPlugin -BD:/Projects/UnityPhysXPlugin/Build --check-stamp-file D:/Projects/UnityPhysXPlugin/Build/NVIDIA.PhysX/CMakeFiles/generate.stamp&#10;if %errorlevel% neq 0 goto :cmEnd&#10;:cmEnd&#10;endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone&#10;:cmErrorLevel&#10;exit /b %1&#10;:cmDone&#10;if %errorlevel% neq 0 goto :VCEnd&#10;:VCEnd" />
+  </Target>
+  <Target Condition="'$(Configuration)|$(Platform)'=='Checked|x64'"
+    Name="CustomCommand_Checked_653b51b35c7dc34c85ad4c3db635fa67"
+    Inputs="D:/Projects/UnityPhysXPlugin/NVIDIA.PhysX/CMakeLists.txt;C:\Program Files\CMake\share\cmake-3.25\Modules\CMakeCSharpInformation.cmake;D:\Projects\UnityPhysXPlugin\Build\CMakeFiles\3.25.0-rc4\CMakeCSharpCompiler.cmake"
+    Outputs="D:\Projects\UnityPhysXPlugin\Build\NVIDIA.PhysX\CMakeFiles\generate.stamp">
+    <Exec Command="echo Building Custom Rule D:/Projects/UnityPhysXPlugin/NVIDIA.PhysX/CMakeLists.txt" />
+    <Exec Command="setlocal&#10;&quot;C:\Program Files\CMake\bin\cmake.exe&quot; -SD:/Projects/UnityPhysXPlugin -BD:/Projects/UnityPhysXPlugin/Build --check-stamp-file D:/Projects/UnityPhysXPlugin/Build/NVIDIA.PhysX/CMakeFiles/generate.stamp&#10;if %errorlevel% neq 0 goto :cmEnd&#10;:cmEnd&#10;endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone&#10;:cmErrorLevel&#10;exit /b %1&#10;:cmDone&#10;if %errorlevel% neq 0 goto :VCEnd&#10;:VCEnd" />
+  </Target>
+  <ItemGroup>
+    <Compile Include="D:\Projects\UnityPhysXPlugin\NVIDIA.PhysX\Partial.cs">
+      <Link>Partial.cs</Link>
+    </Compile>
+    <Compile Include="D:\Projects\UnityPhysXPlugin\NVIDIA.PhysX\Wrapper\Native.cs">
+      <Link>Wrapper\Native.cs</Link>
+    </Compile>
+    <Compile Include="D:\Projects\UnityPhysXPlugin\NVIDIA.PhysX\Wrapper\NativePINVOKE.cs">
+      <Link>Wrapper\NativePINVOKE.cs</Link>
+    </Compile>
+    <Compile Include="D:\Projects\UnityPhysXPlugin\NVIDIA.PhysX\Wrapper\Px1DConstraint.cs">
+      <Link>Wrapper\Px1DConstraint.cs</Link>
+    </Compile>
+    <Compile Include="D:\Projects\UnityPhysXPlugin\NVIDIA.PhysX\Wrapper\PxActor.cs">
+      <Link>Wrapper\PxActor.cs</Link>
+    </Compile>
+    <Compile Include="D:\Projects\UnityPhysXPlugin\NVIDIA.PhysX\Wrapper\PxActorCollision.cs">
+      <Link>Wrapper\PxActorCollision.cs</Link>
+    </Compile>
+    <Compile Include="D:\Projects\UnityPhysXPlugin\NVIDIA.PhysX\Wrapper\PxActorFlag.cs">
+      <Link>Wrapper\PxActorFlag.cs</Link>
+    </Compile>
+    <Compile Include="D:\Projects\UnityPhysXPlugin\NVIDIA.PhysX\Wrapper\PxActorList.cs">
+      <Link>Wrapper\PxActorList.cs</Link>
+    </Compile>
+    <Compile Include="D:\Projects\UnityPhysXPlugin\NVIDIA.PhysX\Wrapper\PxActorShape.cs">
+      <Link>Wrapper\PxActorShape.cs</Link>
+    </Compile>
+    <Compile Include="D:\Projects\UnityPhysXPlugin\NVIDIA.PhysX\Wrapper\PxActorTypeFlag.cs">
+      <Link>Wrapper\PxActorTypeFlag.cs</Link>
+    </Compile>
+    <Compile Include="D:\Projects\UnityPhysXPlugin\NVIDIA.PhysX\Wrapper\PxAggregate.cs">
+      <Link>Wrapper\PxAggregate.cs</Link>
+    </Compile>
+    <Compile Include="D:\Projects\UnityPhysXPlugin\NVIDIA.PhysX\Wrapper\PxAllocatorCallback.cs">
+      <Link>Wrapper\PxAllocatorCallback.cs</Link>
+    </Compile>
+    <Compile Include="D:\Projects\UnityPhysXPlugin\NVIDIA.PhysX\Wrapper\PxArticulation.cs">
+      <Link>Wrapper\PxArticulation.cs</Link>
+    </Compile>
+    <Compile Include="D:\Projects\UnityPhysXPlugin\NVIDIA.PhysX\Wrapper\PxArticulationAxis.cs">
+      <Link>Wrapper\PxArticulationAxis.cs</Link>
+    </Compile>
+    <Compile Include="D:\Projects\UnityPhysXPlugin\NVIDIA.PhysX\Wrapper\PxArticulationBase.cs">
+      <Link>Wrapper\PxArticulationBase.cs</Link>
+    </Compile>
+    <Compile Include="D:\Projects\UnityPhysXPlugin\NVIDIA.PhysX\Wrapper\PxArticulationCache.cs">
+      <Link>Wrapper\PxArticulationCache.cs</Link>
+    </Compile>
+    <Compile Include="D:\Projects\UnityPhysXPlugin\NVIDIA.PhysX\Wrapper\PxArticulationDriveCache.cs">
+      <Link>Wrapper\PxArticulationDriveCache.cs</Link>
+    </Compile>
+    <Compile Include="D:\Projects\UnityPhysXPlugin\NVIDIA.PhysX\Wrapper\PxArticulationDriveType.cs">
+      <Link>Wrapper\PxArticulationDriveType.cs</Link>
+    </Compile>
+    <Compile Include="D:\Projects\UnityPhysXPlugin\NVIDIA.PhysX\Wrapper\PxArticulationFlag.cs">
+      <Link>Wrapper\PxArticulationFlag.cs</Link>
+    </Compile>
+    <Compile Include="D:\Projects\UnityPhysXPlugin\NVIDIA.PhysX\Wrapper\PxArticulationJoint.cs">
+      <Link>Wrapper\PxArticulationJoint.cs</Link>
+    </Compile>
+    <Compile Include="D:\Projects\UnityPhysXPlugin\NVIDIA.PhysX\Wrapper\PxArticulationJointBase.cs">
+      <Link>Wrapper\PxArticulationJointBase.cs</Link>
+    </Compile>
+    <Compile Include="D:\Projects\UnityPhysXPlugin\NVIDIA.PhysX\Wrapper\PxArticulationJointDriveType.cs">
+      <Link>Wrapper\PxArticulationJointDriveType.cs</Link>
+    </Compile>
+    <Compile Include="D:\Projects\UnityPhysXPlugin\NVIDIA.PhysX\Wrapper\PxArticulationJointReducedCoordinate.cs">
+      <Link>Wrapper\PxArticulationJointReducedCoordinate.cs</Link>
+    </Compile>
+    <Compile Include="D:\Projects\UnityPhysXPlugin\NVIDIA.PhysX\Wrapper\PxArticulationJointType.cs">
+      <Link>Wrapper\PxArticulationJointType.cs</Link>
+    </Compile>
+    <Compile Include="D:\Projects\UnityPhysXPlugin\NVIDIA.PhysX\Wrapper\PxArticulationLink.cs">
+      <Link>Wrapper\PxArticulationLink.cs</Link>
+    </Compile>
+    <Compile Include="D:\Projects\UnityPhysXPlugin\NVIDIA.PhysX\Wrapper\PxArticulationMotion.cs">
+      <Link>Wrapper\PxArticulationMotion.cs</Link>
+    </Compile>
+    <Compile Include="D:\Projects\UnityPhysXPlugin\NVIDIA.PhysX\Wrapper\PxArticulationReducedCoordinate.cs">
+      <Link>Wrapper\PxArticulationReducedCoordinate.cs</Link>
+    </Compile>
+    <Compile Include="D:\Projects\UnityPhysXPlugin\NVIDIA.PhysX\Wrapper\PxArticulationRootLinkData.cs">
+      <Link>Wrapper\PxArticulationRootLinkData.cs</Link>
+    </Compile>
+    <Compile Include="D:\Projects\UnityPhysXPlugin\NVIDIA.PhysX\Wrapper\PxBVH33MidphaseDesc.cs">
+      <Link>Wrapper\PxBVH33MidphaseDesc.cs</Link>
+    </Compile>
+    <Compile Include="D:\Projects\UnityPhysXPlugin\NVIDIA.PhysX\Wrapper\PxBVH34MidphaseDesc.cs">
+      <Link>Wrapper\PxBVH34MidphaseDesc.cs</Link>
+    </Compile>
+    <Compile Include="D:\Projects\UnityPhysXPlugin\NVIDIA.PhysX\Wrapper\PxBVHStructure.cs">
+      <Link>Wrapper\PxBVHStructure.cs</Link>
+    </Compile>
+    <Compile Include="D:\Projects\UnityPhysXPlugin\NVIDIA.PhysX\Wrapper\PxBVHStructureDesc.cs">
+      <Link>Wrapper\PxBVHStructureDesc.cs</Link>
+    </Compile>
+    <Compile Include="D:\Projects\UnityPhysXPlugin\NVIDIA.PhysX\Wrapper\PxBase.cs">
+      <Link>Wrapper\PxBase.cs</Link>
+    </Compile>
+    <Compile Include="D:\Projects\UnityPhysXPlugin\NVIDIA.PhysX\Wrapper\PxBaseFlag.cs">
+      <Link>Wrapper\PxBaseFlag.cs</Link>
+    </Compile>
+    <Compile Include="D:\Projects\UnityPhysXPlugin\NVIDIA.PhysX\Wrapper\PxBaseTask.cs">
+      <Link>Wrapper\PxBaseTask.cs</Link>
+    </Compile>
+    <Compile Include="D:\Projects\UnityPhysXPlugin\NVIDIA.PhysX\Wrapper\PxBoundedData.cs">
+      <Link>Wrapper\PxBoundedData.cs</Link>
+    </Compile>
+    <Compile Include="D:\Projects\UnityPhysXPlugin\NVIDIA.PhysX\Wrapper\PxBounds3.cs">
+      <Link>Wrapper\PxBounds3.cs</Link>
+    </Compile>
+    <Compile Include="D:\Projects\UnityPhysXPlugin\NVIDIA.PhysX\Wrapper\PxBoxGeometry.cs">
+      <Link>Wrapper\PxBoxGeometry.cs</Link>
+    </Compile>
+    <Compile Include="D:\Projects\UnityPhysXPlugin\NVIDIA.PhysX\Wrapper\PxBroadPhaseCallback.cs">
+      <Link>Wrapper\PxBroadPhaseCallback.cs</Link>
+    </Compile>
+    <Compile Include="D:\Projects\UnityPhysXPlugin\NVIDIA.PhysX\Wrapper\PxBroadPhaseCaps.cs">
+      <Link>Wrapper\PxBroadPhaseCaps.cs</Link>
+    </Compile>
+    <Compile Include="D:\Projects\UnityPhysXPlugin\NVIDIA.PhysX\Wrapper\PxBroadPhaseRegion.cs">
+      <Link>Wrapper\PxBroadPhaseRegion.cs</Link>
+    </Compile>
+    <Compile Include="D:\Projects\UnityPhysXPlugin\NVIDIA.PhysX\Wrapper\PxBroadPhaseRegionInfo.cs">
+      <Link>Wrapper\PxBroadPhaseRegionInfo.cs</Link>
+    </Compile>
+    <Compile Include="D:\Projects\UnityPhysXPlugin\NVIDIA.PhysX\Wrapper\PxBroadPhaseType.cs">
+      <Link>Wrapper\PxBroadPhaseType.cs</Link>
+    </Compile>
+    <Compile Include="D:\Projects\UnityPhysXPlugin\NVIDIA.PhysX\Wrapper\PxCapsuleGeometry.cs">
+      <Link>Wrapper\PxCapsuleGeometry.cs</Link>
+    </Compile>
+    <Compile Include="D:\Projects\UnityPhysXPlugin\NVIDIA.PhysX\Wrapper\PxCombineMode.cs">
+      <Link>Wrapper\PxCombineMode.cs</Link>
+    </Compile>
+    <Compile Include="D:\Projects\UnityPhysXPlugin\NVIDIA.PhysX\Wrapper\PxConcreteType.cs">
+      <Link>Wrapper\PxConcreteType.cs</Link>
+    </Compile>
+    <Compile Include="D:\Projects\UnityPhysXPlugin\NVIDIA.PhysX\Wrapper\PxConstraint.cs">
+      <Link>Wrapper\PxConstraint.cs</Link>
+    </Compile>
+    <Compile Include="D:\Projects\UnityPhysXPlugin\NVIDIA.PhysX\Wrapper\PxConstraintConnector.cs">
+      <Link>Wrapper\PxConstraintConnector.cs</Link>
+    </Compile>
+    <Compile Include="D:\Projects\UnityPhysXPlugin\NVIDIA.PhysX\Wrapper\PxConstraintFlag.cs">
+      <Link>Wrapper\PxConstraintFlag.cs</Link>
+    </Compile>
+    <Compile Include="D:\Projects\UnityPhysXPlugin\NVIDIA.PhysX\Wrapper\PxConstraintInfo.cs">
+      <Link>Wrapper\PxConstraintInfo.cs</Link>
+    </Compile>
+    <Compile Include="D:\Projects\UnityPhysXPlugin\NVIDIA.PhysX\Wrapper\PxConstraintInfoList.cs">
+      <Link>Wrapper\PxConstraintInfoList.cs</Link>
+    </Compile>
+    <Compile Include="D:\Projects\UnityPhysXPlugin\NVIDIA.PhysX\Wrapper\PxConstraintInvMassScale.cs">
+      <Link>Wrapper\PxConstraintInvMassScale.cs</Link>
+    </Compile>
+    <Compile Include="D:\Projects\UnityPhysXPlugin\NVIDIA.PhysX\Wrapper\PxConstraintShaderTable.cs">
+      <Link>Wrapper\PxConstraintShaderTable.cs</Link>
+    </Compile>
+    <Compile Include="D:\Projects\UnityPhysXPlugin\NVIDIA.PhysX\Wrapper\PxContactPair.cs">
+      <Link>Wrapper\PxContactPair.cs</Link>
+    </Compile>
+    <Compile Include="D:\Projects\UnityPhysXPlugin\NVIDIA.PhysX\Wrapper\PxContactPairFlag.cs">
+      <Link>Wrapper\PxContactPairFlag.cs</Link>
+    </Compile>
+    <Compile Include="D:\Projects\UnityPhysXPlugin\NVIDIA.PhysX\Wrapper\PxContactPairHeader.cs">
+      <Link>Wrapper\PxContactPairHeader.cs</Link>
+    </Compile>
+    <Compile Include="D:\Projects\UnityPhysXPlugin\NVIDIA.PhysX\Wrapper\PxContactPairHeaderFlag.cs">
+      <Link>Wrapper\PxContactPairHeaderFlag.cs</Link>
+    </Compile>
+    <Compile Include="D:\Projects\UnityPhysXPlugin\NVIDIA.PhysX\Wrapper\PxContactPairList.cs">
+      <Link>Wrapper\PxContactPairList.cs</Link>
+    </Compile>
+    <Compile Include="D:\Projects\UnityPhysXPlugin\NVIDIA.PhysX\Wrapper\PxContactPairPoint.cs">
+      <Link>Wrapper\PxContactPairPoint.cs</Link>
+    </Compile>
+    <Compile Include="D:\Projects\UnityPhysXPlugin\NVIDIA.PhysX\Wrapper\PxConvexFlag.cs">
+      <Link>Wrapper\PxConvexFlag.cs</Link>
+    </Compile>
+    <Compile Include="D:\Projects\UnityPhysXPlugin\NVIDIA.PhysX\Wrapper\PxConvexMesh.cs">
+      <Link>Wrapper\PxConvexMesh.cs</Link>
+    </Compile>
+    <Compile Include="D:\Projects\UnityPhysXPlugin\NVIDIA.PhysX\Wrapper\PxConvexMeshCookingResult.cs">
+      <Link>Wrapper\PxConvexMeshCookingResult.cs</Link>
+    </Compile>
+    <Compile Include="D:\Projects\UnityPhysXPlugin\NVIDIA.PhysX\Wrapper\PxConvexMeshCookingType.cs">
+      <Link>Wrapper\PxConvexMeshCookingType.cs</Link>
+    </Compile>
+    <Compile Include="D:\Projects\UnityPhysXPlugin\NVIDIA.PhysX\Wrapper\PxConvexMeshDesc.cs">
+      <Link>Wrapper\PxConvexMeshDesc.cs</Link>
+    </Compile>
+    <Compile Include="D:\Projects\UnityPhysXPlugin\NVIDIA.PhysX\Wrapper\PxConvexMeshGeometry.cs">
+      <Link>Wrapper\PxConvexMeshGeometry.cs</Link>
+    </Compile>
+    <Compile Include="D:\Projects\UnityPhysXPlugin\NVIDIA.PhysX\Wrapper\PxConvexMeshGeometryFlag.cs">
+      <Link>Wrapper\PxConvexMeshGeometryFlag.cs</Link>
+    </Compile>
+    <Compile Include="D:\Projects\UnityPhysXPlugin\NVIDIA.PhysX\Wrapper\PxCooking.cs">
+      <Link>Wrapper\PxCooking.cs</Link>
+    </Compile>
+    <Compile Include="D:\Projects\UnityPhysXPlugin\NVIDIA.PhysX\Wrapper\PxCookingParams.cs">
+      <Link>Wrapper\PxCookingParams.cs</Link>
+    </Compile>
+    <Compile Include="D:\Projects\UnityPhysXPlugin\NVIDIA.PhysX\Wrapper\PxCpuDispatcher.cs">
+      <Link>Wrapper\PxCpuDispatcher.cs</Link>
+    </Compile>
+    <Compile Include="D:\Projects\UnityPhysXPlugin\NVIDIA.PhysX\Wrapper\PxD6Axis.cs">
+      <Link>Wrapper\PxD6Axis.cs</Link>
+    </Compile>
+    <Compile Include="D:\Projects\UnityPhysXPlugin\NVIDIA.PhysX\Wrapper\PxD6Drive.cs">
+      <Link>Wrapper\PxD6Drive.cs</Link>
+    </Compile>
+    <Compile Include="D:\Projects\UnityPhysXPlugin\NVIDIA.PhysX\Wrapper\PxD6Joint.cs">
+      <Link>Wrapper\PxD6Joint.cs</Link>
+    </Compile>
+    <Compile Include="D:\Projects\UnityPhysXPlugin\NVIDIA.PhysX\Wrapper\PxD6JointDrive.cs">
+      <Link>Wrapper\PxD6JointDrive.cs</Link>
+    </Compile>
+    <Compile Include="D:\Projects\UnityPhysXPlugin\NVIDIA.PhysX\Wrapper\PxD6JointDriveFlag.cs">
+      <Link>Wrapper\PxD6JointDriveFlag.cs</Link>
+    </Compile>
+    <Compile Include="D:\Projects\UnityPhysXPlugin\NVIDIA.PhysX\Wrapper\PxD6Motion.cs">
+      <Link>Wrapper\PxD6Motion.cs</Link>
+    </Compile>
+    <Compile Include="D:\Projects\UnityPhysXPlugin\NVIDIA.PhysX\Wrapper\PxDefaultAllocator.cs">
+      <Link>Wrapper\PxDefaultAllocator.cs</Link>
+    </Compile>
+    <Compile Include="D:\Projects\UnityPhysXPlugin\NVIDIA.PhysX\Wrapper\PxDefaultCpuDispatcher.cs">
+      <Link>Wrapper\PxDefaultCpuDispatcher.cs</Link>
+    </Compile>
+    <Compile Include="D:\Projects\UnityPhysXPlugin\NVIDIA.PhysX\Wrapper\PxDefaultErrorCallback.cs">
+      <Link>Wrapper\PxDefaultErrorCallback.cs</Link>
+    </Compile>
+    <Compile Include="D:\Projects\UnityPhysXPlugin\NVIDIA.PhysX\Wrapper\PxDefaultMemoryInputData.cs">
+      <Link>Wrapper\PxDefaultMemoryInputData.cs</Link>
+    </Compile>
+    <Compile Include="D:\Projects\UnityPhysXPlugin\NVIDIA.PhysX\Wrapper\PxDefaultMemoryOutputStream.cs">
+      <Link>Wrapper\PxDefaultMemoryOutputStream.cs</Link>
+    </Compile>
+    <Compile Include="D:\Projects\UnityPhysXPlugin\NVIDIA.PhysX\Wrapper\PxDefaultSimulationFilterShader.cs">
+      <Link>Wrapper\PxDefaultSimulationFilterShader.cs</Link>
+    </Compile>
+    <Compile Include="D:\Projects\UnityPhysXPlugin\NVIDIA.PhysX\Wrapper\PxDistanceJoint.cs">
+      <Link>Wrapper\PxDistanceJoint.cs</Link>
+    </Compile>
+    <Compile Include="D:\Projects\UnityPhysXPlugin\NVIDIA.PhysX\Wrapper\PxDistanceJointFlag.cs">
+      <Link>Wrapper\PxDistanceJointFlag.cs</Link>
+    </Compile>
+    <Compile Include="D:\Projects\UnityPhysXPlugin\NVIDIA.PhysX\Wrapper\PxDominanceGroupPair.cs">
+      <Link>Wrapper\PxDominanceGroupPair.cs</Link>
+    </Compile>
+    <Compile Include="D:\Projects\UnityPhysXPlugin\NVIDIA.PhysX\Wrapper\PxEMPTY.cs">
+      <Link>Wrapper\PxEMPTY.cs</Link>
+    </Compile>
+    <Compile Include="D:\Projects\UnityPhysXPlugin\NVIDIA.PhysX\Wrapper\PxErrorCallback.cs">
+      <Link>Wrapper\PxErrorCallback.cs</Link>
+    </Compile>
+    <Compile Include="D:\Projects\UnityPhysXPlugin\NVIDIA.PhysX\Wrapper\PxErrorCode.cs">
+      <Link>Wrapper\PxErrorCode.cs</Link>
+    </Compile>
+    <Compile Include="D:\Projects\UnityPhysXPlugin\NVIDIA.PhysX\Wrapper\PxFilterData.cs">
+      <Link>Wrapper\PxFilterData.cs</Link>
+    </Compile>
+    <Compile Include="D:\Projects\UnityPhysXPlugin\NVIDIA.PhysX\Wrapper\PxFilterFlag.cs">
+      <Link>Wrapper\PxFilterFlag.cs</Link>
+    </Compile>
+    <Compile Include="D:\Projects\UnityPhysXPlugin\NVIDIA.PhysX\Wrapper\PxFilterOp.cs">
+      <Link>Wrapper\PxFilterOp.cs</Link>
+    </Compile>
+    <Compile Include="D:\Projects\UnityPhysXPlugin\NVIDIA.PhysX\Wrapper\PxFixedJoint.cs">
+      <Link>Wrapper\PxFixedJoint.cs</Link>
+    </Compile>
+    <Compile Include="D:\Projects\UnityPhysXPlugin\NVIDIA.PhysX\Wrapper\PxForceMode.cs">
+      <Link>Wrapper\PxForceMode.cs</Link>
+    </Compile>
+    <Compile Include="D:\Projects\UnityPhysXPlugin\NVIDIA.PhysX\Wrapper\PxFoundation.cs">
+      <Link>Wrapper\PxFoundation.cs</Link>
+    </Compile>
+    <Compile Include="D:\Projects\UnityPhysXPlugin\NVIDIA.PhysX\Wrapper\PxFrictionType.cs">
+      <Link>Wrapper\PxFrictionType.cs</Link>
+    </Compile>
+    <Compile Include="D:\Projects\UnityPhysXPlugin\NVIDIA.PhysX\Wrapper\PxGeometry.cs">
+      <Link>Wrapper\PxGeometry.cs</Link>
+    </Compile>
+    <Compile Include="D:\Projects\UnityPhysXPlugin\NVIDIA.PhysX\Wrapper\PxGeometryHolder.cs">
+      <Link>Wrapper\PxGeometryHolder.cs</Link>
+    </Compile>
+    <Compile Include="D:\Projects\UnityPhysXPlugin\NVIDIA.PhysX\Wrapper\PxGeometryType.cs">
+      <Link>Wrapper\PxGeometryType.cs</Link>
+    </Compile>
+    <Compile Include="D:\Projects\UnityPhysXPlugin\NVIDIA.PhysX\Wrapper\PxGroupsMask.cs">
+      <Link>Wrapper\PxGroupsMask.cs</Link>
+    </Compile>
+    <Compile Include="D:\Projects\UnityPhysXPlugin\NVIDIA.PhysX\Wrapper\PxHeightField.cs">
+      <Link>Wrapper\PxHeightField.cs</Link>
+    </Compile>
+    <Compile Include="D:\Projects\UnityPhysXPlugin\NVIDIA.PhysX\Wrapper\PxHeightFieldDesc.cs">
+      <Link>Wrapper\PxHeightFieldDesc.cs</Link>
+    </Compile>
+    <Compile Include="D:\Projects\UnityPhysXPlugin\NVIDIA.PhysX\Wrapper\PxHeightFieldFlag.cs">
+      <Link>Wrapper\PxHeightFieldFlag.cs</Link>
+    </Compile>
+    <Compile Include="D:\Projects\UnityPhysXPlugin\NVIDIA.PhysX\Wrapper\PxHeightFieldFormat.cs">
+      <Link>Wrapper\PxHeightFieldFormat.cs</Link>
+    </Compile>
+    <Compile Include="D:\Projects\UnityPhysXPlugin\NVIDIA.PhysX\Wrapper\PxHeightFieldGeometry.cs">
+      <Link>Wrapper\PxHeightFieldGeometry.cs</Link>
+    </Compile>
+    <Compile Include="D:\Projects\UnityPhysXPlugin\NVIDIA.PhysX\Wrapper\PxHeightFieldSample.cs">
+      <Link>Wrapper\PxHeightFieldSample.cs</Link>
+    </Compile>
+    <Compile Include="D:\Projects\UnityPhysXPlugin\NVIDIA.PhysX\Wrapper\PxHitFlag.cs">
+      <Link>Wrapper\PxHitFlag.cs</Link>
+    </Compile>
+    <Compile Include="D:\Projects\UnityPhysXPlugin\NVIDIA.PhysX\Wrapper\PxHullPolygon.cs">
+      <Link>Wrapper\PxHullPolygon.cs</Link>
+    </Compile>
+    <Compile Include="D:\Projects\UnityPhysXPlugin\NVIDIA.PhysX\Wrapper\PxIDENTITY.cs">
+      <Link>Wrapper\PxIDENTITY.cs</Link>
+    </Compile>
+    <Compile Include="D:\Projects\UnityPhysXPlugin\NVIDIA.PhysX\Wrapper\PxInputData.cs">
+      <Link>Wrapper\PxInputData.cs</Link>
+    </Compile>
+    <Compile Include="D:\Projects\UnityPhysXPlugin\NVIDIA.PhysX\Wrapper\PxInputStream.cs">
+      <Link>Wrapper\PxInputStream.cs</Link>
+    </Compile>
+    <Compile Include="D:\Projects\UnityPhysXPlugin\NVIDIA.PhysX\Wrapper\PxJoint.cs">
+      <Link>Wrapper\PxJoint.cs</Link>
+    </Compile>
+    <Compile Include="D:\Projects\UnityPhysXPlugin\NVIDIA.PhysX\Wrapper\PxJointActorIndex.cs">
+      <Link>Wrapper\PxJointActorIndex.cs</Link>
+    </Compile>
+    <Compile Include="D:\Projects\UnityPhysXPlugin\NVIDIA.PhysX\Wrapper\PxJointAngularLimitPair.cs">
+      <Link>Wrapper\PxJointAngularLimitPair.cs</Link>
+    </Compile>
+    <Compile Include="D:\Projects\UnityPhysXPlugin\NVIDIA.PhysX\Wrapper\PxJointLimitCone.cs">
+      <Link>Wrapper\PxJointLimitCone.cs</Link>
+    </Compile>
+    <Compile Include="D:\Projects\UnityPhysXPlugin\NVIDIA.PhysX\Wrapper\PxJointLimitParameters.cs">
+      <Link>Wrapper\PxJointLimitParameters.cs</Link>
+    </Compile>
+    <Compile Include="D:\Projects\UnityPhysXPlugin\NVIDIA.PhysX\Wrapper\PxJointLimitPyramid.cs">
+      <Link>Wrapper\PxJointLimitPyramid.cs</Link>
+    </Compile>
+    <Compile Include="D:\Projects\UnityPhysXPlugin\NVIDIA.PhysX\Wrapper\PxJointLinearLimit.cs">
+      <Link>Wrapper\PxJointLinearLimit.cs</Link>
+    </Compile>
+    <Compile Include="D:\Projects\UnityPhysXPlugin\NVIDIA.PhysX\Wrapper\PxJointLinearLimitPair.cs">
+      <Link>Wrapper\PxJointLinearLimitPair.cs</Link>
+    </Compile>
+    <Compile Include="D:\Projects\UnityPhysXPlugin\NVIDIA.PhysX\Wrapper\PxLightCpuTask.cs">
+      <Link>Wrapper\PxLightCpuTask.cs</Link>
+    </Compile>
+    <Compile Include="D:\Projects\UnityPhysXPlugin\NVIDIA.PhysX\Wrapper\PxLocationHit.cs">
+      <Link>Wrapper\PxLocationHit.cs</Link>
+    </Compile>
+    <Compile Include="D:\Projects\UnityPhysXPlugin\NVIDIA.PhysX\Wrapper\PxMassProperties.cs">
+      <Link>Wrapper\PxMassProperties.cs</Link>
+    </Compile>
+    <Compile Include="D:\Projects\UnityPhysXPlugin\NVIDIA.PhysX\Wrapper\PxMat33.cs">
+      <Link>Wrapper\PxMat33.cs</Link>
+    </Compile>
+    <Compile Include="D:\Projects\UnityPhysXPlugin\NVIDIA.PhysX\Wrapper\PxMat44.cs">
+      <Link>Wrapper\PxMat44.cs</Link>
+    </Compile>
+    <Compile Include="D:\Projects\UnityPhysXPlugin\NVIDIA.PhysX\Wrapper\PxMaterial.cs">
+      <Link>Wrapper\PxMaterial.cs</Link>
+    </Compile>
+    <Compile Include="D:\Projects\UnityPhysXPlugin\NVIDIA.PhysX\Wrapper\PxMaterialFlag.cs">
+      <Link>Wrapper\PxMaterialFlag.cs</Link>
+    </Compile>
+    <Compile Include="D:\Projects\UnityPhysXPlugin\NVIDIA.PhysX\Wrapper\PxMaterialIndices.cs">
+      <Link>Wrapper\PxMaterialIndices.cs</Link>
+    </Compile>
+    <Compile Include="D:\Projects\UnityPhysXPlugin\NVIDIA.PhysX\Wrapper\PxMeshCookingHint.cs">
+      <Link>Wrapper\PxMeshCookingHint.cs</Link>
+    </Compile>
+    <Compile Include="D:\Projects\UnityPhysXPlugin\NVIDIA.PhysX\Wrapper\PxMeshFlag.cs">
+      <Link>Wrapper\PxMeshFlag.cs</Link>
+    </Compile>
+    <Compile Include="D:\Projects\UnityPhysXPlugin\NVIDIA.PhysX\Wrapper\PxMeshGeometryFlag.cs">
+      <Link>Wrapper\PxMeshGeometryFlag.cs</Link>
+    </Compile>
+    <Compile Include="D:\Projects\UnityPhysXPlugin\NVIDIA.PhysX\Wrapper\PxMeshMidPhase.cs">
+      <Link>Wrapper\PxMeshMidPhase.cs</Link>
+    </Compile>
+    <Compile Include="D:\Projects\UnityPhysXPlugin\NVIDIA.PhysX\Wrapper\PxMeshPreprocessingFlag.cs">
+      <Link>Wrapper\PxMeshPreprocessingFlag.cs</Link>
+    </Compile>
+    <Compile Include="D:\Projects\UnityPhysXPlugin\NVIDIA.PhysX\Wrapper\PxMeshScale.cs">
+      <Link>Wrapper\PxMeshScale.cs</Link>
+    </Compile>
+    <Compile Include="D:\Projects\UnityPhysXPlugin\NVIDIA.PhysX\Wrapper\PxMidphaseDesc.cs">
+      <Link>Wrapper\PxMidphaseDesc.cs</Link>
+    </Compile>
+    <Compile Include="D:\Projects\UnityPhysXPlugin\NVIDIA.PhysX\Wrapper\PxOutputStream.cs">
+      <Link>Wrapper\PxOutputStream.cs</Link>
+    </Compile>
+    <Compile Include="D:\Projects\UnityPhysXPlugin\NVIDIA.PhysX\Wrapper\PxOverlapBuffer.cs">
+      <Link>Wrapper\PxOverlapBuffer.cs</Link>
+    </Compile>
+    <Compile Include="D:\Projects\UnityPhysXPlugin\NVIDIA.PhysX\Wrapper\PxOverlapBuffer1.cs">
+      <Link>Wrapper\PxOverlapBuffer1.cs</Link>
+    </Compile>
+    <Compile Include="D:\Projects\UnityPhysXPlugin\NVIDIA.PhysX\Wrapper\PxOverlapBuffer10.cs">
+      <Link>Wrapper\PxOverlapBuffer10.cs</Link>
+    </Compile>
+    <Compile Include="D:\Projects\UnityPhysXPlugin\NVIDIA.PhysX\Wrapper\PxOverlapBuffer100.cs">
+      <Link>Wrapper\PxOverlapBuffer100.cs</Link>
+    </Compile>
+    <Compile Include="D:\Projects\UnityPhysXPlugin\NVIDIA.PhysX\Wrapper\PxOverlapCallback.cs">
+      <Link>Wrapper\PxOverlapCallback.cs</Link>
+    </Compile>
+    <Compile Include="D:\Projects\UnityPhysXPlugin\NVIDIA.PhysX\Wrapper\PxOverlapHit.cs">
+      <Link>Wrapper\PxOverlapHit.cs</Link>
+    </Compile>
+    <Compile Include="D:\Projects\UnityPhysXPlugin\NVIDIA.PhysX\Wrapper\PxPairFilteringMode.cs">
+      <Link>Wrapper\PxPairFilteringMode.cs</Link>
+    </Compile>
+    <Compile Include="D:\Projects\UnityPhysXPlugin\NVIDIA.PhysX\Wrapper\PxPairFlag.cs">
+      <Link>Wrapper\PxPairFlag.cs</Link>
+    </Compile>
+    <Compile Include="D:\Projects\UnityPhysXPlugin\NVIDIA.PhysX\Wrapper\PxPhysics.cs">
+      <Link>Wrapper\PxPhysics.cs</Link>
+    </Compile>
+    <Compile Include="D:\Projects\UnityPhysXPlugin\NVIDIA.PhysX\Wrapper\PxPhysicsInsertionCallback.cs">
+      <Link>Wrapper\PxPhysicsInsertionCallback.cs</Link>
+    </Compile>
+    <Compile Include="D:\Projects\UnityPhysXPlugin\NVIDIA.PhysX\Wrapper\PxPlane.cs">
+      <Link>Wrapper\PxPlane.cs</Link>
+    </Compile>
+    <Compile Include="D:\Projects\UnityPhysXPlugin\NVIDIA.PhysX\Wrapper\PxPlaneGeometry.cs">
+      <Link>Wrapper\PxPlaneGeometry.cs</Link>
+    </Compile>
+    <Compile Include="D:\Projects\UnityPhysXPlugin\NVIDIA.PhysX\Wrapper\PxPrismaticJoint.cs">
+      <Link>Wrapper\PxPrismaticJoint.cs</Link>
+    </Compile>
+    <Compile Include="D:\Projects\UnityPhysXPlugin\NVIDIA.PhysX\Wrapper\PxPrismaticJointFlag.cs">
+      <Link>Wrapper\PxPrismaticJointFlag.cs</Link>
+    </Compile>
+    <Compile Include="D:\Projects\UnityPhysXPlugin\NVIDIA.PhysX\Wrapper\PxProfilerCallback.cs">
+      <Link>Wrapper\PxProfilerCallback.cs</Link>
+    </Compile>
+    <Compile Include="D:\Projects\UnityPhysXPlugin\NVIDIA.PhysX\Wrapper\PxPruningStructure.cs">
+      <Link>Wrapper\PxPruningStructure.cs</Link>
+    </Compile>
+    <Compile Include="D:\Projects\UnityPhysXPlugin\NVIDIA.PhysX\Wrapper\PxPruningStructureType.cs">
+      <Link>Wrapper\PxPruningStructureType.cs</Link>
+    </Compile>
+    <Compile Include="D:\Projects\UnityPhysXPlugin\NVIDIA.PhysX\Wrapper\PxPvd.cs">
+      <Link>Wrapper\PxPvd.cs</Link>
+    </Compile>
+    <Compile Include="D:\Projects\UnityPhysXPlugin\NVIDIA.PhysX\Wrapper\PxPvdInstrumentationFlag.cs">
+      <Link>Wrapper\PxPvdInstrumentationFlag.cs</Link>
+    </Compile>
+    <Compile Include="D:\Projects\UnityPhysXPlugin\NVIDIA.PhysX\Wrapper\PxPvdSceneClient.cs">
+      <Link>Wrapper\PxPvdSceneClient.cs</Link>
+    </Compile>
+    <Compile Include="D:\Projects\UnityPhysXPlugin\NVIDIA.PhysX\Wrapper\PxPvdSceneFlag.cs">
+      <Link>Wrapper\PxPvdSceneFlag.cs</Link>
+    </Compile>
+    <Compile Include="D:\Projects\UnityPhysXPlugin\NVIDIA.PhysX\Wrapper\PxPvdTransport.cs">
+      <Link>Wrapper\PxPvdTransport.cs</Link>
+    </Compile>
+    <Compile Include="D:\Projects\UnityPhysXPlugin\NVIDIA.PhysX\Wrapper\PxPvdUpdateType.cs">
+      <Link>Wrapper\PxPvdUpdateType.cs</Link>
+    </Compile>
+    <Compile Include="D:\Projects\UnityPhysXPlugin\NVIDIA.PhysX\Wrapper\PxQuat.cs">
+      <Link>Wrapper\PxQuat.cs</Link>
+    </Compile>
+    <Compile Include="D:\Projects\UnityPhysXPlugin\NVIDIA.PhysX\Wrapper\PxQueryCache.cs">
+      <Link>Wrapper\PxQueryCache.cs</Link>
+    </Compile>
+    <Compile Include="D:\Projects\UnityPhysXPlugin\NVIDIA.PhysX\Wrapper\PxQueryFilterData.cs">
+      <Link>Wrapper\PxQueryFilterData.cs</Link>
+    </Compile>
+    <Compile Include="D:\Projects\UnityPhysXPlugin\NVIDIA.PhysX\Wrapper\PxQueryFlag.cs">
+      <Link>Wrapper\PxQueryFlag.cs</Link>
+    </Compile>
+    <Compile Include="D:\Projects\UnityPhysXPlugin\NVIDIA.PhysX\Wrapper\PxQueryHit.cs">
+      <Link>Wrapper\PxQueryHit.cs</Link>
+    </Compile>
+    <Compile Include="D:\Projects\UnityPhysXPlugin\NVIDIA.PhysX\Wrapper\PxRaycastBuffer.cs">
+      <Link>Wrapper\PxRaycastBuffer.cs</Link>
+    </Compile>
+    <Compile Include="D:\Projects\UnityPhysXPlugin\NVIDIA.PhysX\Wrapper\PxRaycastBuffer1.cs">
+      <Link>Wrapper\PxRaycastBuffer1.cs</Link>
+    </Compile>
+    <Compile Include="D:\Projects\UnityPhysXPlugin\NVIDIA.PhysX\Wrapper\PxRaycastBuffer10.cs">
+      <Link>Wrapper\PxRaycastBuffer10.cs</Link>
+    </Compile>
+    <Compile Include="D:\Projects\UnityPhysXPlugin\NVIDIA.PhysX\Wrapper\PxRaycastBuffer100.cs">
+      <Link>Wrapper\PxRaycastBuffer100.cs</Link>
+    </Compile>
+    <Compile Include="D:\Projects\UnityPhysXPlugin\NVIDIA.PhysX\Wrapper\PxRaycastCallback.cs">
+      <Link>Wrapper\PxRaycastCallback.cs</Link>
+    </Compile>
+    <Compile Include="D:\Projects\UnityPhysXPlugin\NVIDIA.PhysX\Wrapper\PxRaycastHit.cs">
+      <Link>Wrapper\PxRaycastHit.cs</Link>
+    </Compile>
+    <Compile Include="D:\Projects\UnityPhysXPlugin\NVIDIA.PhysX\Wrapper\PxRevoluteJoint.cs">
+      <Link>Wrapper\PxRevoluteJoint.cs</Link>
+    </Compile>
+    <Compile Include="D:\Projects\UnityPhysXPlugin\NVIDIA.PhysX\Wrapper\PxRevoluteJointFlag.cs">
+      <Link>Wrapper\PxRevoluteJointFlag.cs</Link>
+    </Compile>
+    <Compile Include="D:\Projects\UnityPhysXPlugin\NVIDIA.PhysX\Wrapper\PxRigidActor.cs">
+      <Link>Wrapper\PxRigidActor.cs</Link>
+    </Compile>
+    <Compile Include="D:\Projects\UnityPhysXPlugin\NVIDIA.PhysX\Wrapper\PxRigidActorList.cs">
+      <Link>Wrapper\PxRigidActorList.cs</Link>
+    </Compile>
+    <Compile Include="D:\Projects\UnityPhysXPlugin\NVIDIA.PhysX\Wrapper\PxRigidBody.cs">
+      <Link>Wrapper\PxRigidBody.cs</Link>
+    </Compile>
+    <Compile Include="D:\Projects\UnityPhysXPlugin\NVIDIA.PhysX\Wrapper\PxRigidBodyFlag.cs">
+      <Link>Wrapper\PxRigidBodyFlag.cs</Link>
+    </Compile>
+    <Compile Include="D:\Projects\UnityPhysXPlugin\NVIDIA.PhysX\Wrapper\PxRigidBodyList.cs">
+      <Link>Wrapper\PxRigidBodyList.cs</Link>
+    </Compile>
+    <Compile Include="D:\Projects\UnityPhysXPlugin\NVIDIA.PhysX\Wrapper\PxRigidDynamic.cs">
+      <Link>Wrapper\PxRigidDynamic.cs</Link>
+    </Compile>
+    <Compile Include="D:\Projects\UnityPhysXPlugin\NVIDIA.PhysX\Wrapper\PxRigidDynamicLockFlag.cs">
+      <Link>Wrapper\PxRigidDynamicLockFlag.cs</Link>
+    </Compile>
+    <Compile Include="D:\Projects\UnityPhysXPlugin\NVIDIA.PhysX\Wrapper\PxRigidStatic.cs">
+      <Link>Wrapper\PxRigidStatic.cs</Link>
+    </Compile>
+    <Compile Include="D:\Projects\UnityPhysXPlugin\NVIDIA.PhysX\Wrapper\PxScene.cs">
+      <Link>Wrapper\PxScene.cs</Link>
+    </Compile>
+    <Compile Include="D:\Projects\UnityPhysXPlugin\NVIDIA.PhysX\Wrapper\PxSceneCollision.cs">
+      <Link>Wrapper\PxSceneCollision.cs</Link>
+    </Compile>
+    <Compile Include="D:\Projects\UnityPhysXPlugin\NVIDIA.PhysX\Wrapper\PxSceneDesc.cs">
+      <Link>Wrapper\PxSceneDesc.cs</Link>
+    </Compile>
+    <Compile Include="D:\Projects\UnityPhysXPlugin\NVIDIA.PhysX\Wrapper\PxSceneFlag.cs">
+      <Link>Wrapper\PxSceneFlag.cs</Link>
+    </Compile>
+    <Compile Include="D:\Projects\UnityPhysXPlugin\NVIDIA.PhysX\Wrapper\PxSceneLimits.cs">
+      <Link>Wrapper\PxSceneLimits.cs</Link>
+    </Compile>
+    <Compile Include="D:\Projects\UnityPhysXPlugin\NVIDIA.PhysX\Wrapper\PxSceneQueryUpdateMode.cs">
+      <Link>Wrapper\PxSceneQueryUpdateMode.cs</Link>
+    </Compile>
+    <Compile Include="D:\Projects\UnityPhysXPlugin\NVIDIA.PhysX\Wrapper\PxShape.cs">
+      <Link>Wrapper\PxShape.cs</Link>
+    </Compile>
+    <Compile Include="D:\Projects\UnityPhysXPlugin\NVIDIA.PhysX\Wrapper\PxShapeCollision.cs">
+      <Link>Wrapper\PxShapeCollision.cs</Link>
+    </Compile>
+    <Compile Include="D:\Projects\UnityPhysXPlugin\NVIDIA.PhysX\Wrapper\PxShapeFlag.cs">
+      <Link>Wrapper\PxShapeFlag.cs</Link>
+    </Compile>
+    <Compile Include="D:\Projects\UnityPhysXPlugin\NVIDIA.PhysX\Wrapper\PxSimpleTriangleMesh.cs">
+      <Link>Wrapper\PxSimpleTriangleMesh.cs</Link>
+    </Compile>
+    <Compile Include="D:\Projects\UnityPhysXPlugin\NVIDIA.PhysX\Wrapper\PxSimulationEventCallback.cs">
+      <Link>Wrapper\PxSimulationEventCallback.cs</Link>
+    </Compile>
+    <Compile Include="D:\Projects\UnityPhysXPlugin\NVIDIA.PhysX\Wrapper\PxSimulationFilterCallback.cs">
+      <Link>Wrapper\PxSimulationFilterCallback.cs</Link>
+    </Compile>
+    <Compile Include="D:\Projects\UnityPhysXPlugin\NVIDIA.PhysX\Wrapper\PxSimulationFilterShader.cs">
+      <Link>Wrapper\PxSimulationFilterShader.cs</Link>
+    </Compile>
+    <Compile Include="D:\Projects\UnityPhysXPlugin\NVIDIA.PhysX\Wrapper\PxSimulationStatistics.cs">
+      <Link>Wrapper\PxSimulationStatistics.cs</Link>
+    </Compile>
+    <Compile Include="D:\Projects\UnityPhysXPlugin\NVIDIA.PhysX\Wrapper\PxSolverType.cs">
+      <Link>Wrapper\PxSolverType.cs</Link>
+    </Compile>
+    <Compile Include="D:\Projects\UnityPhysXPlugin\NVIDIA.PhysX\Wrapper\PxSpatialForce.cs">
+      <Link>Wrapper\PxSpatialForce.cs</Link>
+    </Compile>
+    <Compile Include="D:\Projects\UnityPhysXPlugin\NVIDIA.PhysX\Wrapper\PxSphereGeometry.cs">
+      <Link>Wrapper\PxSphereGeometry.cs</Link>
+    </Compile>
+    <Compile Include="D:\Projects\UnityPhysXPlugin\NVIDIA.PhysX\Wrapper\PxSphericalJoint.cs">
+      <Link>Wrapper\PxSphericalJoint.cs</Link>
+    </Compile>
+    <Compile Include="D:\Projects\UnityPhysXPlugin\NVIDIA.PhysX\Wrapper\PxSphericalJointFlag.cs">
+      <Link>Wrapper\PxSphericalJointFlag.cs</Link>
+    </Compile>
+    <Compile Include="D:\Projects\UnityPhysXPlugin\NVIDIA.PhysX\Wrapper\PxSpring.cs">
+      <Link>Wrapper\PxSpring.cs</Link>
+    </Compile>
+    <Compile Include="D:\Projects\UnityPhysXPlugin\NVIDIA.PhysX\Wrapper\PxStridedData.cs">
+      <Link>Wrapper\PxStridedData.cs</Link>
+    </Compile>
+    <Compile Include="D:\Projects\UnityPhysXPlugin\NVIDIA.PhysX\Wrapper\PxSweepBuffer.cs">
+      <Link>Wrapper\PxSweepBuffer.cs</Link>
+    </Compile>
+    <Compile Include="D:\Projects\UnityPhysXPlugin\NVIDIA.PhysX\Wrapper\PxSweepBuffer1.cs">
+      <Link>Wrapper\PxSweepBuffer1.cs</Link>
+    </Compile>
+    <Compile Include="D:\Projects\UnityPhysXPlugin\NVIDIA.PhysX\Wrapper\PxSweepBuffer10.cs">
+      <Link>Wrapper\PxSweepBuffer10.cs</Link>
+    </Compile>
+    <Compile Include="D:\Projects\UnityPhysXPlugin\NVIDIA.PhysX\Wrapper\PxSweepBuffer100.cs">
+      <Link>Wrapper\PxSweepBuffer100.cs</Link>
+    </Compile>
+    <Compile Include="D:\Projects\UnityPhysXPlugin\NVIDIA.PhysX\Wrapper\PxSweepCallback.cs">
+      <Link>Wrapper\PxSweepCallback.cs</Link>
+    </Compile>
+    <Compile Include="D:\Projects\UnityPhysXPlugin\NVIDIA.PhysX\Wrapper\PxSweepHit.cs">
+      <Link>Wrapper\PxSweepHit.cs</Link>
+    </Compile>
+    <Compile Include="D:\Projects\UnityPhysXPlugin\NVIDIA.PhysX\Wrapper\PxTask.cs">
+      <Link>Wrapper\PxTask.cs</Link>
+    </Compile>
+    <Compile Include="D:\Projects\UnityPhysXPlugin\NVIDIA.PhysX\Wrapper\PxTaskManager.cs">
+      <Link>Wrapper\PxTaskManager.cs</Link>
+    </Compile>
+    <Compile Include="D:\Projects\UnityPhysXPlugin\NVIDIA.PhysX\Wrapper\PxTaskType.cs">
+      <Link>Wrapper\PxTaskType.cs</Link>
+    </Compile>
+    <Compile Include="D:\Projects\UnityPhysXPlugin\NVIDIA.PhysX\Wrapper\PxTolerancesScale.cs">
+      <Link>Wrapper\PxTolerancesScale.cs</Link>
+    </Compile>
+    <Compile Include="D:\Projects\UnityPhysXPlugin\NVIDIA.PhysX\Wrapper\PxTransform.cs">
+      <Link>Wrapper\PxTransform.cs</Link>
+    </Compile>
+    <Compile Include="D:\Projects\UnityPhysXPlugin\NVIDIA.PhysX\Wrapper\PxTransformList.cs">
+      <Link>Wrapper\PxTransformList.cs</Link>
+    </Compile>
+    <Compile Include="D:\Projects\UnityPhysXPlugin\NVIDIA.PhysX\Wrapper\PxTriangleMesh.cs">
+      <Link>Wrapper\PxTriangleMesh.cs</Link>
+    </Compile>
+    <Compile Include="D:\Projects\UnityPhysXPlugin\NVIDIA.PhysX\Wrapper\PxTriangleMeshCookingResult.cs">
+      <Link>Wrapper\PxTriangleMeshCookingResult.cs</Link>
+    </Compile>
+    <Compile Include="D:\Projects\UnityPhysXPlugin\NVIDIA.PhysX\Wrapper\PxTriangleMeshDesc.cs">
+      <Link>Wrapper\PxTriangleMeshDesc.cs</Link>
+    </Compile>
+    <Compile Include="D:\Projects\UnityPhysXPlugin\NVIDIA.PhysX\Wrapper\PxTriangleMeshFlag.cs">
+      <Link>Wrapper\PxTriangleMeshFlag.cs</Link>
+    </Compile>
+    <Compile Include="D:\Projects\UnityPhysXPlugin\NVIDIA.PhysX\Wrapper\PxTriangleMeshGeometry.cs">
+      <Link>Wrapper\PxTriangleMeshGeometry.cs</Link>
+    </Compile>
+    <Compile Include="D:\Projects\UnityPhysXPlugin\NVIDIA.PhysX\Wrapper\PxTriggerPair.cs">
+      <Link>Wrapper\PxTriggerPair.cs</Link>
+    </Compile>
+    <Compile Include="D:\Projects\UnityPhysXPlugin\NVIDIA.PhysX\Wrapper\PxTriggerPairList.cs">
+      <Link>Wrapper\PxTriggerPairList.cs</Link>
+    </Compile>
+    <Compile Include="D:\Projects\UnityPhysXPlugin\NVIDIA.PhysX\Wrapper\PxUnityCollisionFiltering.cs">
+      <Link>Wrapper\PxUnityCollisionFiltering.cs</Link>
+    </Compile>
+    <Compile Include="D:\Projects\UnityPhysXPlugin\NVIDIA.PhysX\Wrapper\PxVec3.cs">
+      <Link>Wrapper\PxVec3.cs</Link>
+    </Compile>
+    <Compile Include="D:\Projects\UnityPhysXPlugin\NVIDIA.PhysX\Wrapper\PxVec4.cs">
+      <Link>Wrapper\PxVec4.cs</Link>
+    </Compile>
+    <Compile Include="D:\Projects\UnityPhysXPlugin\NVIDIA.PhysX\Wrapper\PxVersion.cs">
+      <Link>Wrapper\PxVersion.cs</Link>
+    </Compile>
+    <Compile Include="D:\Projects\UnityPhysXPlugin\NVIDIA.PhysX\Wrapper\PxZERO.cs">
+      <Link>Wrapper\PxZERO.cs</Link>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="D:\Projects\UnityPhysXPlugin\Build\ZERO_CHECK.vcxproj">
+      <Project>{31A902C6-4837-3DF2-8A94-99918B40922C}</Project>
+      <Name>ZERO_CHECK</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="D:\Projects\UnityPhysXPlugin\Build\NVIDIA.PhysX.Native\NVIDIA.PhysX.Native.vcxproj">
+      <Project>{1C94E222-7411-317F-81D9-C9582BF15F0F}</Project>
+      <Name>NVIDIA.PhysX.Native</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="UnityEngine.CoreModule">
+      <HintPath>UnityEngine.CoreModule.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+  <PropertyGroup Condition="'$(Configuration)' == 'Debug'">
+    <PostBuildEvent>setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy D:/Projects/UnityPhysXPlugin/Build/NVIDIA.PhysX/Debug/NVIDIA.PhysX.dll ../../../Bin/NVIDIA.PhysX.dll
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E copy D:/Projects/UnityPhysXPlugin/Build/NVIDIA.PhysX/Debug/NVIDIA.PhysX.dll "../../../Unity/PhysX Plugin/Assets/NVIDIA/PhysX/Runtime/Wrapper/NVIDIA.PhysX.dll"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+:VCEnd
+</PostBuildEvent>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)' == 'Release'">
+    <PostBuildEvent>setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy D:/Projects/UnityPhysXPlugin/Build/NVIDIA.PhysX/Release/NVIDIA.PhysX.dll ../../../Bin/NVIDIA.PhysX.dll
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E copy D:/Projects/UnityPhysXPlugin/Build/NVIDIA.PhysX/Release/NVIDIA.PhysX.dll "../../../Unity/PhysX Plugin/Assets/NVIDIA/PhysX/Runtime/Wrapper/NVIDIA.PhysX.dll"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+:VCEnd
+</PostBuildEvent>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)' == 'Profile'">
+    <PostBuildEvent>setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy D:/Projects/UnityPhysXPlugin/Build/NVIDIA.PhysX/Profile/NVIDIA.PhysX.dll ../../../Bin/NVIDIA.PhysX.dll
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E copy D:/Projects/UnityPhysXPlugin/Build/NVIDIA.PhysX/Profile/NVIDIA.PhysX.dll "../../../Unity/PhysX Plugin/Assets/NVIDIA/PhysX/Runtime/Wrapper/NVIDIA.PhysX.dll"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+:VCEnd
+</PostBuildEvent>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)' == 'Checked'">
+    <PostBuildEvent>setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy D:/Projects/UnityPhysXPlugin/Build/NVIDIA.PhysX/Checked/NVIDIA.PhysX.dll ../../../Bin/NVIDIA.PhysX.dll
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E copy D:/Projects/UnityPhysXPlugin/Build/NVIDIA.PhysX/Checked/NVIDIA.PhysX.dll "../../../Unity/PhysX Plugin/Assets/NVIDIA/PhysX/Runtime/Wrapper/NVIDIA.PhysX.dll"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+:VCEnd
+</PostBuildEvent>
+  </PropertyGroup>
+  <PropertyGroup>
+    <BuildDependsOn>
+      CustomCommand_Checked_653b51b35c7dc34c85ad4c3db635fa67;
+      CustomCommand_Debug_653b51b35c7dc34c85ad4c3db635fa67;
+      CustomCommand_Profile_653b51b35c7dc34c85ad4c3db635fa67;
+      CustomCommand_Release_653b51b35c7dc34c85ad4c3db635fa67;
+      $(BuildDependsOn)
+</BuildDependsOn>
+  </PropertyGroup>
+</Project>

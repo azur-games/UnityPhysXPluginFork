@@ -1,0 +1,68 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "ALL_BUILD", "ALL_BUILD.vcxproj", "{D77ABD87-6B38-3747-9E5C-64A73CB53906}"
+	ProjectSection(ProjectDependencies) = postProject
+		{D184AEF0-A2AF-3009-A831-62F8B5625844} = {D184AEF0-A2AF-3009-A831-62F8B5625844}
+		{1C94E222-7411-317F-81D9-C9582BF15F0F} = {1C94E222-7411-317F-81D9-C9582BF15F0F}
+		{31A902C6-4837-3DF2-8A94-99918B40922C} = {31A902C6-4837-3DF2-8A94-99918B40922C}
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NVIDIA.PhysX", "NVIDIA.PhysX\NVIDIA.PhysX.csproj", "{D184AEF0-A2AF-3009-A831-62F8B5625844}"
+	ProjectSection(ProjectDependencies) = postProject
+		{1C94E222-7411-317F-81D9-C9582BF15F0F} = {1C94E222-7411-317F-81D9-C9582BF15F0F}
+		{31A902C6-4837-3DF2-8A94-99918B40922C} = {31A902C6-4837-3DF2-8A94-99918B40922C}
+	EndProjectSection
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "NVIDIA.PhysX.Native", "NVIDIA.PhysX.Native\NVIDIA.PhysX.Native.vcxproj", "{1C94E222-7411-317F-81D9-C9582BF15F0F}"
+	ProjectSection(ProjectDependencies) = postProject
+		{31A902C6-4837-3DF2-8A94-99918B40922C} = {31A902C6-4837-3DF2-8A94-99918B40922C}
+	EndProjectSection
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "ZERO_CHECK", "ZERO_CHECK.vcxproj", "{31A902C6-4837-3DF2-8A94-99918B40922C}"
+	ProjectSection(ProjectDependencies) = postProject
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x64 = Debug|x64
+		Release|x64 = Release|x64
+		Profile|x64 = Profile|x64
+		Checked|x64 = Checked|x64
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{D77ABD87-6B38-3747-9E5C-64A73CB53906}.Debug|x64.ActiveCfg = Debug|x64
+		{D77ABD87-6B38-3747-9E5C-64A73CB53906}.Release|x64.ActiveCfg = Release|x64
+		{D77ABD87-6B38-3747-9E5C-64A73CB53906}.Profile|x64.ActiveCfg = Profile|x64
+		{D77ABD87-6B38-3747-9E5C-64A73CB53906}.Checked|x64.ActiveCfg = Checked|x64
+		{D184AEF0-A2AF-3009-A831-62F8B5625844}.Debug|x64.ActiveCfg = Debug|x64
+		{D184AEF0-A2AF-3009-A831-62F8B5625844}.Debug|x64.Build.0 = Debug|x64
+		{D184AEF0-A2AF-3009-A831-62F8B5625844}.Release|x64.ActiveCfg = Release|x64
+		{D184AEF0-A2AF-3009-A831-62F8B5625844}.Release|x64.Build.0 = Release|x64
+		{D184AEF0-A2AF-3009-A831-62F8B5625844}.Profile|x64.ActiveCfg = Profile|x64
+		{D184AEF0-A2AF-3009-A831-62F8B5625844}.Profile|x64.Build.0 = Profile|x64
+		{D184AEF0-A2AF-3009-A831-62F8B5625844}.Checked|x64.ActiveCfg = Checked|x64
+		{D184AEF0-A2AF-3009-A831-62F8B5625844}.Checked|x64.Build.0 = Checked|x64
+		{1C94E222-7411-317F-81D9-C9582BF15F0F}.Debug|x64.ActiveCfg = Debug|x64
+		{1C94E222-7411-317F-81D9-C9582BF15F0F}.Debug|x64.Build.0 = Debug|x64
+		{1C94E222-7411-317F-81D9-C9582BF15F0F}.Release|x64.ActiveCfg = Release|x64
+		{1C94E222-7411-317F-81D9-C9582BF15F0F}.Release|x64.Build.0 = Release|x64
+		{1C94E222-7411-317F-81D9-C9582BF15F0F}.Profile|x64.ActiveCfg = Profile|x64
+		{1C94E222-7411-317F-81D9-C9582BF15F0F}.Profile|x64.Build.0 = Profile|x64
+		{1C94E222-7411-317F-81D9-C9582BF15F0F}.Checked|x64.ActiveCfg = Checked|x64
+		{1C94E222-7411-317F-81D9-C9582BF15F0F}.Checked|x64.Build.0 = Checked|x64
+		{31A902C6-4837-3DF2-8A94-99918B40922C}.Debug|x64.ActiveCfg = Debug|x64
+		{31A902C6-4837-3DF2-8A94-99918B40922C}.Debug|x64.Build.0 = Debug|x64
+		{31A902C6-4837-3DF2-8A94-99918B40922C}.Release|x64.ActiveCfg = Release|x64
+		{31A902C6-4837-3DF2-8A94-99918B40922C}.Release|x64.Build.0 = Release|x64
+		{31A902C6-4837-3DF2-8A94-99918B40922C}.Profile|x64.ActiveCfg = Profile|x64
+		{31A902C6-4837-3DF2-8A94-99918B40922C}.Profile|x64.Build.0 = Profile|x64
+		{31A902C6-4837-3DF2-8A94-99918B40922C}.Checked|x64.ActiveCfg = Checked|x64
+		{31A902C6-4837-3DF2-8A94-99918B40922C}.Checked|x64.Build.0 = Checked|x64
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {89DB6522-75FB-3203-A5F8-C8069B44B8D0}
+	EndGlobalSection
+	GlobalSection(ExtensibilityAddIns) = postSolution
+	EndGlobalSection
+EndGlobal
